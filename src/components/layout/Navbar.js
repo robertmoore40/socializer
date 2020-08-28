@@ -13,5 +13,7 @@ import Button from '@material-ui/core/Button';
 import HomeIcon from '@material-ui/icons/Home';
 
 
-class Navbar extends Component {}
+class Navbar extends Component {
+    
+}
 
