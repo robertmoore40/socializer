@@ -14,6 +14,9 @@ import HomeIcon from '@material-ui/icons/Home';
 
 
 class Navbar extends Component {
-    
+
 }
 
+Navbar.propTypes = {
+  authenticated: PropTypes.bool.isRequired
+};
