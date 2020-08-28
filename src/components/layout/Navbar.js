@@ -24,3 +24,5 @@ Navbar.propTypes = {
 const mapStateToProps = (state) => ({
     authenticated: state.user.authenticated
   });
+
+  export default connect(mapStateToProps)(Navbar);
