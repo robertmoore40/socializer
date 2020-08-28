@@ -25,4 +25,4 @@ const mapStateToProps = (state) => ({
     authenticated: state.user.authenticated
   });
 
-  export default connect(mapStateToProps)(Navbar);
+export default connect(mapStateToProps)(Navbar);
