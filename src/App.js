@@ -16,3 +16,5 @@ import AuthRoute from './util/AuthRoute';
 
 import home from './pages/home';
 import login from './pages/login';
+import signup from './pages/signup';
+import user from './pages/user';
