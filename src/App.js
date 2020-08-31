@@ -20,3 +20,5 @@ import signup from './pages/signup';
 import user from './pages/user';
 
 import axios from 'axios';
+
+const theme = createMuiTheme(themeObject);
