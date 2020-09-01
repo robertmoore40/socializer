@@ -41,3 +41,8 @@ class Notifications extends Component {
         const anchorEl = this.state.anchorEl;
 
         dayjs.extend(relativeTime);
+
+        let notificationsIcon;
+        if (notifications && notifications.length > 0) {
+          notifications.filter((not) => not.read === false).length > 0
+            ? (notificationsIcon = (
