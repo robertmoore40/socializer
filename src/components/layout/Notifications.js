@@ -71,3 +71,7 @@ class Notifications extends Component {
                         ) : (
                           <ChatIcon color={iconColor} style={{ marginRight: 10 }} />
                         );
+
+                        return (
+                            <MenuItem key={not.createdAt} onClick={this.handleClose}>
+                              {icon}
