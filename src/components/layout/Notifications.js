@@ -23,3 +23,6 @@ class Notifications extends Component {
     state = {
         anchorEl: null
       };
+      handleOpen = (event) => {
+        this.setState({ anchorEl: event.target });
+      };
