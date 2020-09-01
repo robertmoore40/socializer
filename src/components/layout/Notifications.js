@@ -67,3 +67,7 @@ class Notifications extends Component {
                     const iconColor = not.read ? 'primary' : 'secondary';
                     const icon =
                       not.type === 'like' ? (
+                        <FavoriteIcon color={iconColor} style={{ marginRight: 10 }} />
+                        ) : (
+                          <ChatIcon color={iconColor} style={{ marginRight: 10 }} />
+                        );
