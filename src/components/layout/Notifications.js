@@ -26,3 +26,6 @@ class Notifications extends Component {
       handleOpen = (event) => {
         this.setState({ anchorEl: event.target });
       };
+      handleClose = () => {
+        this.setState({ anchorEl: null });
+      };
