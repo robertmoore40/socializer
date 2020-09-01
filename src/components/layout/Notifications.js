@@ -54,3 +54,9 @@ class Notifications extends Component {
               >
                 <NotificationsIcon />
               </Badge>
+                ))
+                : (notificationsIcon = <NotificationsIcon />);
+            } else {
+              notificationsIcon = <NotificationsIcon />;
+            }
+            let notificationsMarkup =
