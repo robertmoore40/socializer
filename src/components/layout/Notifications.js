@@ -20,4 +20,6 @@ import { connect } from 'react-redux';
 import { markNotificationsRead } from '../../redux/actions/userActions';
 
 class Notifications extends Component {
-    state = {}
+    state = {
+        anchorEl: null
+      };
