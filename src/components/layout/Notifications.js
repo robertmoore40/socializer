@@ -35,3 +35,7 @@ class Notifications extends Component {
           .map((not) => not.notificationId);
         this.props.markNotificationsRead(unreadNotificationsIds);
       };
+
+      render() {
+        const notifications = this.props.notifications;
+        const anchorEl = this.state.anchorEl;
