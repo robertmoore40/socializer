@@ -46,3 +46,11 @@ class Notifications extends Component {
         if (notifications && notifications.length > 0) {
           notifications.filter((not) => not.read === false).length > 0
             ? (notificationsIcon = (
+                <Badge
+                badgeContent={
+                  notifications.filter((not) => not.read === false).length
+                }
+                color="secondary"
+              >
+                <NotificationsIcon />
+              </Badge>
