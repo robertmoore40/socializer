@@ -75,3 +75,13 @@ class Notifications extends Component {
                         return (
                             <MenuItem key={not.createdAt} onClick={this.handleClose}>
                               {icon}
+                              <Typography
+                component={Link}
+                color="default"
+                variant="body1"
+                to={`/users/${not.recipient}/scream/${not.screamId}`}
+              >
+                {not.sender} {verb} your scream {time}
+              </Typography>
+            </MenuItem>
+          );
