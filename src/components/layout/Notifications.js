@@ -101,3 +101,7 @@ class Notifications extends Component {
                   >
                     {notificationsIcon}
                     );
+                    </Fragment>
+    );
+  }
+}
