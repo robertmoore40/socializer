@@ -90,3 +90,13 @@ class Notifications extends Component {
           <MenuItem onClick={this.handleClose}>
             You have no notifications yet
           </MenuItem>
+            );
+            return (
+              <Fragment>
+                <Tooltip placement="top" title="Notifications">
+                  <IconButton
+                    aria-owns={anchorEl ? 'simple-menu' : undefined}
+                    aria-haspopup="true"
+                    onClick={this.handleOpen}
+                  >
+                    {notificationsIcon}
