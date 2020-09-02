@@ -120,3 +120,7 @@ class Notifications extends Component {
       notifications: PropTypes.array.isRequired
     };
     
+
+    const mapStateToProps = (state) => ({
+      notifications: state.user.notifications
+    });
