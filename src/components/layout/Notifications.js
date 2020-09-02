@@ -85,3 +85,8 @@ class Notifications extends Component {
               </Typography>
             </MenuItem>
           );
+        })
+        ) : (
+          <MenuItem onClick={this.handleClose}>
+            You have no notifications yet
+          </MenuItem>
