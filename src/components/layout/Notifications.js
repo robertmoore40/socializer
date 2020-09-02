@@ -124,3 +124,7 @@ class Notifications extends Component {
     const mapStateToProps = (state) => ({
       notifications: state.user.notifications
     });
+    export default connect(
+      mapStateToProps,
+      { markNotificationsRead }
+    )(Notifications);
