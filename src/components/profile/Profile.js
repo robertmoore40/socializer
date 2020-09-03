@@ -48,3 +48,6 @@ render() {
         authenticated
     }
 } = this.props;
+
+let profileMarkup = !loading ? (
+    authenticated ? (
