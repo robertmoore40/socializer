@@ -54,3 +54,10 @@ let profileMarkup = !loading ? (
         <Paper className={classes.paper}>
         <div className={classes.profile}>
           <div className="image-wrapper">
+          <img src={imageUrl} alt="profile" className="profile-image" />
+              <input
+                type="file"
+                id="imageInput"
+                hidden="hidden"
+                onChange={this.handleImageChange}
+              />
