@@ -61,3 +61,10 @@ let profileMarkup = !loading ? (
                 hidden="hidden"
                 onChange={this.handleImageChange}
               />
+                <MyButton
+                tip="Edit profile picture"
+                onClick={this.handleEditPicture}
+                btnClassName="button"
+              >
+                <EditIcon color="primary" />
+              </MyButton>
