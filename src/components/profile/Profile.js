@@ -35,3 +35,7 @@ const styles = (theme) => ({
 handleEditPicture = () => {
   const fileInput = document.getElementById('imageInput');
   fileInput.click();
+};
+handleLogout = () => {
+  this.props.logoutUser();
+};
