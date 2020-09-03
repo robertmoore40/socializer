@@ -29,3 +29,5 @@ const styles = (theme) => ({
     handleImageChange = (event) => {
         const image = event.target.files[0];
         const formData = new FormData();
+        formData.append('image', image, image.name);
+    this.props.uploadImage(formData);
