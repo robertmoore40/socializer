@@ -31,3 +31,7 @@ const styles = (theme) => ({
         const formData = new FormData();
         formData.append('image', image, image.name);
     this.props.uploadImage(formData);
+};
+handleEditPicture = () => {
+  const fileInput = document.getElementById('imageInput');
+  fileInput.click();
