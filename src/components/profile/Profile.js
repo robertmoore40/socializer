@@ -46,3 +46,5 @@ render() {
         credentials: { handle, createdAt, imageUrl, bio, website, location },
         loading,
         authenticated
+    }
+} = this.props;
