@@ -106,3 +106,6 @@ let profileMarkup = !loading ? (
                 </MyButton>
                 <EditDetails />
               </div>
+              </Paper>
+      ) : (
+        <Paper className={classes.paper}></Paper>
