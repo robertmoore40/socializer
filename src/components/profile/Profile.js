@@ -109,3 +109,6 @@ let profileMarkup = !loading ? (
               </Paper>
       ) : (
         <Paper className={classes.paper}></Paper>
+        <Typography variant="body2" align="center">
+        No profile found, please login again
+      </Typography>
