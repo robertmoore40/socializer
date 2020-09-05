@@ -139,3 +139,7 @@ let profileMarkup = !loading ? (
     return profileMarkup;
   }
 }
+
+const mapStateToProps = (state) => ({
+  user: state.user
+});
