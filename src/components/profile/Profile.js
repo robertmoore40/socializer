@@ -79,3 +79,12 @@ let profileMarkup = !loading ? (
               >
                 @{handle}
               </MuiLink>
+              <hr />
+              {bio && <Typography variant="body2">{bio}</Typography>}
+              <hr />
+              {location && (
+                <Fragment>
+                  <LocationOn color="primary" /> <span>{location}</span>
+                  <hr />
+                </Fragment>
+              )}
