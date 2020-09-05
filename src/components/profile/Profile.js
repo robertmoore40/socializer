@@ -68,3 +68,14 @@ let profileMarkup = !loading ? (
               >
                 <EditIcon color="primary" />
               </MyButton>
+                </div>
+            <hr />
+            <div className="profile-details">
+              <MuiLink
+                component={Link}
+                to={`/users/${handle}`}
+                color="primary"
+                variant="h5"
+              >
+                @{handle}
+              </MuiLink>
