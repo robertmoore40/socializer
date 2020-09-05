@@ -145,3 +145,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapActionsToProps = { logoutUser, uploadImage };
+
+Profile.propTypes = {
+  logoutUser: PropTypes.func.isRequired,
+  uploadImage: PropTypes.func.isRequired,
