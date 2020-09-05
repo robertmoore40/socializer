@@ -143,3 +143,5 @@ let profileMarkup = !loading ? (
 const mapStateToProps = (state) => ({
   user: state.user
 });
+
+const mapActionsToProps = { logoutUser, uploadImage };
