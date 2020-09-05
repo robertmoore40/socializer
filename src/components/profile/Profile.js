@@ -129,3 +129,13 @@ let profileMarkup = !loading ? (
             >
               Signup
             </Button>
+            </div>
+        </Paper>
+      )
+    ) : (
+      <ProfileSkeleton />
+    );
+
+    return profileMarkup;
+  }
+}
