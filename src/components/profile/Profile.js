@@ -121,3 +121,11 @@ let profileMarkup = !loading ? (
        >
          Login
        </Button>
+       <Button
+              variant="contained"
+              color="secondary"
+              component={Link}
+              to="/signup"
+            >
+              Signup
+            </Button>
