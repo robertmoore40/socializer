@@ -75,3 +75,9 @@ class EditDetails extends Component {
         >
           <EditIcon color="primary" />
         </MyButton>
+        <Dialog
+          open={this.state.open}
+          onClose={this.handleClose}
+          fullWidth
+          maxWidth="sm"
+        >
