@@ -33,3 +33,7 @@ const styles = (theme) => ({
 
     mapUserDetailsToState = (credentials) => {
         this.setState({
+            bio: credentials.bio ? credentials.bio : '',
+            website: credentials.website ? credentials.website : '',
+            location: credentials.location ? credentials.location : ''
+          });
