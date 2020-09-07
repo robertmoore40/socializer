@@ -30,3 +30,6 @@ const styles = (theme) => ({
       location: '',
       open: false
     };
+
+    mapUserDetailsToState = (credentials) => {
+        this.setState({
