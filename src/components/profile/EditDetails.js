@@ -15,3 +15,10 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 import EditIcon from '@material-ui/icons/Edit';
+
+const styles = (theme) => ({
+    ...theme,
+    button: {
+      float: 'right'
+    }
+  });
