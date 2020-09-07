@@ -22,3 +22,11 @@ const styles = (theme) => ({
       float: 'right'
     }
   });
+
+  class EditDetails extends Component {
+    state = {
+      bio: '',
+      website: '',
+      location: '',
+      open: false
+    };
