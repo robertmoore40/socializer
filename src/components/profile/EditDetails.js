@@ -41,3 +41,6 @@ class EditDetails extends Component {
     this.setState({ open: true });
     this.mapUserDetailsToState(this.props.credentials);
   };
+  handleClose = () => {
+    this.setState({ open: false });
+  };
