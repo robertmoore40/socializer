@@ -83,3 +83,16 @@ class EditDetails extends Component {
         >
               <DialogTitle>Edit your details</DialogTitle>
           <DialogContent></DialogContent>
+          <form>
+              <TextField
+                name="bio"
+                tpye="text"
+                label="Bio"
+                multiline
+                rows="3"
+                placeholder="A short bio about yourself"
+                className={classes.textField}
+                value={this.state.bio}
+                onChange={this.handleChange}
+                fullWidth
+              />
