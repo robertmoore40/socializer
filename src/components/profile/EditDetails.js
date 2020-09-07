@@ -63,3 +63,7 @@ class EditDetails extends Component {
     this.props.editUserDetails(userDetails);
     this.handleClose();
   };
+
+  render() {
+    const { classes } = this.props;
+    return (
