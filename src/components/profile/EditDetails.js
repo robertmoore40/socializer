@@ -37,3 +37,8 @@ const styles = (theme) => ({
             website: credentials.website ? credentials.website : '',
             location: credentials.location ? credentials.location : ''
           });
+        };
+        handleOpen = () => {
+          this.setState({ open: true });
+          this.mapUserDetailsToState(this.props.credentials);
+        };
