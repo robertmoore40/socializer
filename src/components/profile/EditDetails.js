@@ -54,3 +54,9 @@ class EditDetails extends Component {
       [event.target.name]: event.target.value
     });
   };
+  handleSubmit = () => {
+    const userDetails = {
+      bio: this.state.bio,
+      website: this.state.website,
+      location: this.state.location
+    };
