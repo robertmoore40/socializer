@@ -67,3 +67,11 @@ class EditDetails extends Component {
   render() {
     const { classes } = this.props;
     return (
+        <Fragment>
+        <MyButton
+          tip="Edit Details"
+          onClick={this.handleOpen}
+          btnClassName={classes.button}
+        >
+          <EditIcon color="primary" />
+        </MyButton>
