@@ -46,3 +46,13 @@ const StaticProfile = (props) => {
               <LocationOn color="primary" /> <span>{location}</span>
               <hr />
             </Fragment>
+              )}
+              {website && (
+                <Fragment>
+                  <LinkIcon color="primary" />
+                  <a href={website} target="_blank" rel="noopener noreferrer">
+                    {' '}
+                    {website}
+                  </a>
+                  <hr />
+                </Fragment>
