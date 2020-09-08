@@ -117,3 +117,8 @@ class EditDetails extends Component {
                 fullWidth
               />
                </form>
+               </DialogContent>
+          <DialogActions>
+            <Button onClick={this.handleClose} color="primary">
+              Cancel
+            </Button>
