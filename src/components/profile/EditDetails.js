@@ -140,3 +140,8 @@ EditDetails.propTypes = {
 const mapStateToProps = (state) => ({
   credentials: state.user.credentials
 });
+
+export default connect(
+  mapStateToProps,
+  { editUserDetails }
+)(withStyles(styles)(EditDetails));
