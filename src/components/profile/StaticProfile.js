@@ -22,3 +22,6 @@ const StaticProfile = (props) => {
         profile: { handle, createdAt, imageUrl, bio, website, location }
       } = props;
     
+  return (
+    <Paper className={classes.paper}>
+      <div className={classes.profile}></div>
