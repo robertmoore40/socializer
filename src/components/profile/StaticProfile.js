@@ -64,3 +64,10 @@ const StaticProfile = (props) => {
     </Paper>
   );
 };
+
+
+
+StaticProfile.propTypes = {
+  profile: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
+};
