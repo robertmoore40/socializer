@@ -116,3 +116,4 @@ class EditDetails extends Component {
                 onChange={this.handleChange}
                 fullWidth
               />
+               </form>
