@@ -1,4 +1,3 @@
-  
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import withStyles from '@material-ui/core/styles/withStyles';
@@ -44,11 +43,11 @@ class EditDetails extends Component {
   handleClose = () => {
     this.setState({ open: false });
   };
-
   componentDidMount() {
     const { credentials } = this.props;
     this.mapUserDetailsToState(credentials);
   }
+
   handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value
@@ -63,11 +62,10 @@ class EditDetails extends Component {
     this.props.editUserDetails(userDetails);
     this.handleClose();
   };
-
   render() {
     const { classes } = this.props;
     return (
-        <Fragment>
+      <Fragment>
         <MyButton
           tip="Edit Details"
           onClick={this.handleOpen}
@@ -81,9 +79,9 @@ class EditDetails extends Component {
           fullWidth
           maxWidth="sm"
         >
-              <DialogTitle>Edit your details</DialogTitle>
-          <DialogContent></DialogContent>
-          <form>
+          <DialogTitle>Edit your details</DialogTitle>
+          <DialogContent>
+            <form>
               <TextField
                 name="bio"
                 tpye="text"
@@ -96,7 +94,7 @@ class EditDetails extends Component {
                 onChange={this.handleChange}
                 fullWidth
               />
-               <TextField
+              <TextField
                 name="website"
                 tpye="text"
                 label="Website"
@@ -106,7 +104,7 @@ class EditDetails extends Component {
                 onChange={this.handleChange}
                 fullWidth
               />
-                <TextField
+              <TextField
                 name="location"
                 tpye="text"
                 label="Location"
@@ -116,8 +114,8 @@ class EditDetails extends Component {
                 onChange={this.handleChange}
                 fullWidth
               />
-               </form>
-               </DialogContent>
+            </form>
+          </DialogContent>
           <DialogActions>
             <Button onClick={this.handleClose} color="primary">
               Cancel
