@@ -28,3 +28,11 @@ const StaticProfile = (props) => {
       <div className="image-wrapper">
           <img src={imageUrl} alt="profile" className="profile-image" />
         </div>
+        <hr />
+        <div className="profile-details">
+          <MuiLink
+            component={Link}
+            to={`/users/${handle}`}
+            color="primary"
+            variant="h5"
+          >
