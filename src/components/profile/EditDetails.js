@@ -136,3 +136,7 @@ EditDetails.propTypes = {
   editUserDetails: PropTypes.func.isRequired,
   classes: PropTypes.object.isRequired
 };
+
+const mapStateToProps = (state) => ({
+  credentials: state.user.credentials
+});
