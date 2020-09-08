@@ -131,3 +131,8 @@ class EditDetails extends Component {
     );
   }
 }
+
+EditDetails.propTypes = {
+  editUserDetails: PropTypes.func.isRequired,
+  classes: PropTypes.object.isRequired
+};
