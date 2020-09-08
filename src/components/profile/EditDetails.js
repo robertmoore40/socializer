@@ -106,3 +106,13 @@ class EditDetails extends Component {
                 onChange={this.handleChange}
                 fullWidth
               />
+                <TextField
+                name="location"
+                tpye="text"
+                label="Location"
+                placeholder="Where you live"
+                className={classes.textField}
+                value={this.state.location}
+                onChange={this.handleChange}
+                fullWidth
+              />
