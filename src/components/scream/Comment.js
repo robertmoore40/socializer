@@ -29,3 +29,7 @@ class Comments extends Component {
                {comments.map((comment, index) => {
           const { body, createdAt, userImage, userHandle } = comment;
           return (
+            <Fragment key={createdAt}>
+            <Grid item sm={12}>
+              <Grid container>
+                <Grid item sm={2}>
