@@ -18,3 +18,8 @@ const styles = (theme) => ({
     marginLeft: 20
   }
 });
+
+class Comments extends Component {
+  render() {
+    const { comments, classes } = this.props;
+    return (
