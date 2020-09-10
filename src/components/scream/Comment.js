@@ -52,3 +52,7 @@ class Comments extends Component {
                       </Typography>
                       <hr className={classes.invisibleSeparator} />
                       <Typography variabnt="body1">{body}</Typography>
+                      </div>
+                  </Grid>
+                </Grid>
+              </Grid>
