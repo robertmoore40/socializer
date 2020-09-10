@@ -56,3 +56,13 @@ class Comments extends Component {
                   </Grid>
                 </Grid>
               </Grid>
+              {index !== comments.length - 1 && (
+                <hr className={classes.visibleSeparator} />
+              )}
+            </Fragment>
+          );
+        })}
+      </Grid>
+    );
+  }
+}
