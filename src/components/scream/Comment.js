@@ -70,3 +70,5 @@ class Comments extends Component {
 Comments.propTypes = {
   comments: PropTypes.array.isRequired
 };
+
+export default withStyles(styles)(Comments);
