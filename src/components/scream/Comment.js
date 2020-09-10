@@ -45,3 +45,10 @@ class Comments extends Component {
                         to={`/users/${userHandle}`}
                         color="primary"
                       >
+                          {userHandle}
+                      </Typography>
+                      <Typography variant="body2" color="textSecondary">
+                        {dayjs(createdAt).format('h:mm a, MMMM DD YYYY')}
+                      </Typography>
+                      <hr className={classes.invisibleSeparator} />
+                      <Typography variabnt="body1">{body}</Typography>
