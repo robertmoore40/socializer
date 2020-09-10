@@ -66,3 +66,7 @@ class Comments extends Component {
     );
   }
 }
+
+Comments.propTypes = {
+  comments: PropTypes.array.isRequired
+};
