@@ -43,3 +43,14 @@ class CommentForm extends Component {
         
         <Grid item sm={12} style={{ textAlign: 'center' }}>
           <form onSubmit={this.handleSubmit}>
+          <TextField
+            name="body"
+            type="text"
+            label="Comment on scream"
+            error={errors.comment ? true : false}
+            helperText={errors.comment}
+            value={this.state.body}
+            onChange={this.handleChange}
+            fullWidth
+            className={classes.textField}
+          />
