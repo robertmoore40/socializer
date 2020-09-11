@@ -27,3 +27,8 @@ const styles = (theme) => ({
           this.setState({ body: '' });
         }
       }
+
+
+      handleChange = (event) => {
+        this.setState({ [event.target.name]: event.target.value });
+      };
