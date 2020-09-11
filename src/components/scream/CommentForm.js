@@ -12,3 +12,9 @@ import { submitComment } from '../../redux/actions/dataActions';
 const styles = (theme) => ({
     ...theme
   });
+
+  class CommentForm extends Component {
+    state = {
+      body: '',
+      errors: {}
+    };
