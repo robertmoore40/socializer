@@ -10,33 +10,32 @@ import { connect } from 'react-redux';
 import { submitComment } from '../../redux/actions/dataActions';
 
 const styles = (theme) => ({
-    ...theme
-  });
+  ...theme
+});
 
-  class CommentForm extends Component {
-    state = {
-      body: '',
-      errors: {}
-    };
+class CommentForm extends Component {
+  state = {
+    body: '',
+    errors: {}
+  };
 
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.UI.errors) {
-          this.setState({ errors: nextProps.UI.errors });
-        }
-        if (!nextProps.UI.errors && !nextProps.UI.loading) {
-          this.setState({ body: '' });
-        }
-      }
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.UI.errors) {
+      this.setState({ errors: nextProps.UI.errors });
+    }
+    if (!nextProps.UI.errors && !nextProps.UI.loading) {
+      this.setState({ body: '' });
+    }
+  }
 
+  handleChange = (event) => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
+  handleSubmit = (event) => {
+    event.preventDefault();
+    this.props.submitComment(this.props.screamId, { body: this.state.body });
+  };
 
-      handleChange = (event) => {
-        this.setState({ [event.target.name]: event.target.value });
-      };
-      handleSubmit = (event) => {
-        event.preventDefault();
-        this.props.submitComment(this.props.screamId, { body: this.state.body });
-      };
-
-      render() {
-        const { classes, authenticated } = this.props;
-        const errors = this.state.errors;
+  render() {
+    const { classes, authenticated } = this.props;
+    const errors = this.state.errors;
