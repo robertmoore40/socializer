@@ -36,3 +36,7 @@ const styles = (theme) => ({
         event.preventDefault();
         this.props.submitComment(this.props.screamId, { body: this.state.body });
       };
+
+      render() {
+        const { classes, authenticated } = this.props;
+        const errors = this.state.errors;
