@@ -32,3 +32,7 @@ const styles = (theme) => ({
       handleChange = (event) => {
         this.setState({ [event.target.name]: event.target.value });
       };
+      handleSubmit = (event) => {
+        event.preventDefault();
+        this.props.submitComment(this.props.screamId, { body: this.state.body });
+      };
