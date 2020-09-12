@@ -13,3 +13,7 @@ export class LikeButton extends Component {
           this.props.user.likes &&
         this.props.user.likes.find(
           (like) => like.screamId === this.props.screamId
+          )
+    )
+      return true;
+    else return false;
