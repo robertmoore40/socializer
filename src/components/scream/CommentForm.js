@@ -86,3 +86,5 @@ class CommentForm extends Component {
 
     export default connect(
       mapStateToProps,
+      { submitComment }
+      )(withStyles(styles)(CommentForm));
