@@ -25,4 +25,6 @@ likeScream = () => {
 unlikeScream = () => {
     this.props.unlikeScream(this.props.screamId);
   };
-  render() {
+  render() {  
+      const { authenticated } = this.props.user;
+  const likeButton = !authenticated ? (
