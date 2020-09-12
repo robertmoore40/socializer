@@ -75,3 +75,5 @@ class CommentForm extends Component {
       UI: PropTypes.object.isRequired,  
       classes: PropTypes.object.isRequired,
   screamId: PropTypes.string.isRequired,  
+  authenticated: PropTypes.bool.isRequired
+};
