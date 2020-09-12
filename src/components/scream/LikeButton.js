@@ -25,3 +25,4 @@ likeScream = () => {
 unlikeScream = () => {
     this.props.unlikeScream(this.props.screamId);
   };
+  render() {
