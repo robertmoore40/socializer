@@ -17,3 +17,7 @@ export class LikeButton extends Component {
     )
       return true;
     else return false;
+};
+likeScream = () => {
+  this.props.likeScream(this.props.screamId);
+};
