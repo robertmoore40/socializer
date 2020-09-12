@@ -83,3 +83,6 @@ class CommentForm extends Component {
       authenticated: state.user.authenticated
     });
     
+
+    export default connect(
+      mapStateToProps,
