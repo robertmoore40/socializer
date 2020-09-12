@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import withStyles from '@material-ui/core/styles/withStyles';
-
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
-
 import { connect } from 'react-redux';
 import { submitComment } from '../../redux/actions/dataActions';
 
@@ -39,10 +37,10 @@ class CommentForm extends Component {
   render() {
     const { classes, authenticated } = this.props;
     const errors = this.state.errors;
+
     const commentFormMarkup = authenticated ? (
-        
-        <Grid item sm={12} style={{ textAlign: 'center' }}>
-          <form onSubmit={this.handleSubmit}>
+      <Grid item sm={12} style={{ textAlign: 'center' }}>
+        <form onSubmit={this.handleSubmit}>
           <TextField
             name="body"
             type="text"
@@ -54,7 +52,7 @@ class CommentForm extends Component {
             fullWidth
             className={classes.textField}
           />
-           <Button
+          <Button
             type="submit"
             variant="contained"
             color="primary"
@@ -62,29 +60,28 @@ class CommentForm extends Component {
           >
             Submit
           </Button>
-
-          </form>
+        </form>
         <hr className={classes.visibleSeparator} />
       </Grid>
-        ) : null;
-        return commentFormMarkup;
-      }
-    }
-    CommentForm.propTypes = {
-      submitComment: PropTypes.func.isRequired,
-      UI: PropTypes.object.isRequired,
-      classes: PropTypes.object.isRequired,
-      screamId: PropTypes.string.isRequired,
-      authenticated: PropTypes.bool.isRequired
-    };
-  
-    const mapStateToProps = (state) => ({
-      UI: state.UI,
-      authenticated: state.user.authenticated
-    });
-    
+    ) : null;
+    return commentFormMarkup;
+  }
+}
 
-    export default connect(
-      mapStateToProps,
-      { submitComment }
-      )(withStyles(styles)(CommentForm));
+CommentForm.propTypes = {
+  submitComment: PropTypes.func.isRequired,
+  UI: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired,
+  screamId: PropTypes.string.isRequired,
+  authenticated: PropTypes.bool.isRequired
+};
+
+const mapStateToProps = (state) => ({
+  UI: state.UI,
+  authenticated: state.user.authenticated
+});
+
+export default connect(
+  mapStateToProps,
+  { submitComment }
+)(withStyles(styles)(CommentForm));
