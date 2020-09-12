@@ -70,4 +70,6 @@ class CommentForm extends Component {
         return commentFormMarkup;
       }
     }
-    
+    CommentForm.propTypes = {
+      submitComment: PropTypes.func.isRequired,
+      UI: PropTypes.object.isRequired,    
