@@ -77,4 +77,9 @@ class CommentForm extends Component {
       screamId: PropTypes.string.isRequired,
       authenticated: PropTypes.bool.isRequired
     };
+  
+    const mapStateToProps = (state) => ({
+      UI: state.UI,
+      authenticated: state.user.authenticated
+    });
     
