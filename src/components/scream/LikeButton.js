@@ -51,3 +51,7 @@ LikeButton.propTypes = {
   likeScream: PropTypes.func.isRequired,
   unlikeScream: PropTypes.func.isRequired
 };
+
+const mapStateToProps = (state) => ({
+  user: state.user
+});
