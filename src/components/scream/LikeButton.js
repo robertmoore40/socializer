@@ -33,3 +33,7 @@ unlikeScream = () => {
           <FavoriteBorder color="primary" />
         </MyButton>
       </Link>
+        ) : this.likedScream() ? (
+          <MyButton tip="Undo like" onClick={this.unlikeScream}>
+            <FavoriteIcon color="primary" />
+          </MyButton>
