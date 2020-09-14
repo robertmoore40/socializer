@@ -47,3 +47,5 @@ export class LikeButton extends Component {
 
 LikeButton.propTypes = {
   user: PropTypes.object.isRequired,
+  screamId: PropTypes.string.isRequired,
+  likeScream: PropTypes.func.isRequired,
