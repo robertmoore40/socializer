@@ -37,3 +37,7 @@ unlikeScream = () => {
           <MyButton tip="Undo like" onClick={this.unlikeScream}>
             <FavoriteIcon color="primary" />
           </MyButton>
+            ) : (
+              <MyButton tip="Like" onClick={this.likeScream}>
+                <FavoriteBorder color="primary" />
+              </MyButton>
