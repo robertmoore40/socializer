@@ -14,3 +14,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import ChatIcon from '@material-ui/icons/Chat';
 import { connect } from 'react-redux';
+
+const styles = {
+    card: {
+      position: 'relative',
+      display: 'flex',
+      marginBottom: 20
