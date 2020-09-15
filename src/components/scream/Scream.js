@@ -35,3 +35,12 @@ const styles = {
         dayjs.extend(relativeTime);
     const {
       classes,
+      scream: {
+        body,
+        createdAt,
+        userImage,
+        userHandle,
+        screamId,
+        likeCount,
+        commentCount
+      },
