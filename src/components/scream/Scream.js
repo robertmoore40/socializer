@@ -44,3 +44,7 @@ const styles = {
         likeCount,
         commentCount
       },
+      user: {
+        authenticated,
+        credentials: { handle }
+      }
