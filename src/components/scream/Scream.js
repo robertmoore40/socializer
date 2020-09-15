@@ -48,3 +48,4 @@ const styles = {
         authenticated,
         credentials: { handle }
       }
+    } = this.props;
