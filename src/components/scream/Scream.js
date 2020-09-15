@@ -8,3 +8,5 @@ import MyButton from '../../util/MyButton';
 import DeleteScream from './DeleteScream';
 import ScreamDialog from './ScreamDialog';
 import LikeButton from './LikeButton';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
