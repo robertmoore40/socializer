@@ -86,3 +86,8 @@ const styles = {
             userHandle={userHandle}
             openDialog={this.props.openDialog}
           />
+             </CardContent>
+      </Card>
+    );
+  }
+}
