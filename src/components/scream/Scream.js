@@ -16,23 +16,23 @@ import ChatIcon from '@material-ui/icons/Chat';
 import { connect } from 'react-redux';
 
 const styles = {
-    card: {
-      position: 'relative',
-      display: 'flex',
-      marginBottom: 20
-    },
-    image: {
-      minWidth: 200
-    },
-    content: {
-      padding: 25,
-      objectFit: 'cover'
-    }
-  };
-  
-  class Scream extends Component {
-    render() {
-        dayjs.extend(relativeTime);
+  card: {
+    position: 'relative',
+    display: 'flex',
+    marginBottom: 20
+  },
+  image: {
+    minWidth: 200
+  },
+  content: {
+    padding: 25,
+    objectFit: 'cover'
+  }
+};
+
+class Scream extends Component {
+  render() {
+    dayjs.extend(relativeTime);
     const {
       classes,
       scream: {
@@ -51,24 +51,24 @@ const styles = {
     } = this.props;
 
     const deleteButton =
-    authenticated && userHandle === handle ? (
-      <DeleteScream screamId={screamId} />
-    ) : null;
+      authenticated && userHandle === handle ? (
+        <DeleteScream screamId={screamId} />
+      ) : null;
     return (
       <Card className={classes.card}>
         <CardMedia
-         image={userImage}
-         title="Profile image"
-         className={classes.image}
-       />
-         <CardContent className={classes.content}>
+          image={userImage}
+          title="Profile image"
+          className={classes.image}
+        />
+        <CardContent className={classes.content}>
           <Typography
             variant="h5"
             component={Link}
             to={`/users/${userHandle}`}
             color="primary"
-          ></Typography>
-           {userHandle}
+          >
+            {userHandle}
           </Typography>
           {deleteButton}
           <Typography variant="body2" color="textSecondary">
@@ -86,7 +86,7 @@ const styles = {
             userHandle={userHandle}
             openDialog={this.props.openDialog}
           />
-             </CardContent>
+        </CardContent>
       </Card>
     );
   }
