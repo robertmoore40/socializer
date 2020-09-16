@@ -80,3 +80,9 @@ const styles = {
           <MyButton tip="comments">
             <ChatIcon color="primary" />
           </MyButton>
+          <span>{commentCount} comments</span>
+          <ScreamDialog
+            screamId={screamId}
+            userHandle={userHandle}
+            openDialog={this.props.openDialog}
+          />
