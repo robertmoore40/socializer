@@ -57,3 +57,7 @@ const styles = {
     return (
       <Card className={classes.card}>
         <CardMedia
+         image={userImage}
+         title="Profile image"
+         className={classes.image}
+       />
