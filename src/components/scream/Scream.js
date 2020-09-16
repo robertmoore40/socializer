@@ -49,3 +49,8 @@ const styles = {
         credentials: { handle }
       }
     } = this.props;
+
+    const deleteButton =
+    authenticated && userHandle === handle ? (
+      <DeleteScream screamId={screamId} />
+    ) : null;
