@@ -98,3 +98,7 @@ Scream.propTypes = {
   classes: PropTypes.object.isRequired,
   openDialog: PropTypes.bool
 };
+
+const mapStateToProps = (state) => ({
+  user: state.user
+});
