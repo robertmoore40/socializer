@@ -54,3 +54,6 @@ const styles = {
     authenticated && userHandle === handle ? (
       <DeleteScream screamId={screamId} />
     ) : null;
+    return (
+      <Card className={classes.card}>
+        <CardMedia
