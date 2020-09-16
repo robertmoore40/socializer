@@ -61,3 +61,10 @@ const styles = {
          title="Profile image"
          className={classes.image}
        />
+         <CardContent className={classes.content}>
+          <Typography
+            variant="h5"
+            component={Link}
+            to={`/users/${userHandle}`}
+            color="primary"
+          ></Typography>
