@@ -102,3 +102,5 @@ Scream.propTypes = {
 const mapStateToProps = (state) => ({
   user: state.user
 });
+
+export default connect(mapStateToProps)(withStyles(styles)(Scream));
