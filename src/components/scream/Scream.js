@@ -68,3 +68,9 @@ const styles = {
             to={`/users/${userHandle}`}
             color="primary"
           ></Typography>
+           {userHandle}
+          </Typography>
+          {deleteButton}
+          <Typography variant="body2" color="textSecondary">
+            {dayjs(createdAt).fromNow()}
+          </Typography>
