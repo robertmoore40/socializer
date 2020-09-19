@@ -19,3 +19,5 @@ class home extends Component {
         screams.map((scream) => <Scream key={scream.screamId} scream={scream} />)
         ) : (
           <ScreamSkeleton />
+          );
+    return (
