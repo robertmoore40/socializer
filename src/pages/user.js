@@ -4,3 +4,4 @@ import PropTypes from 'prop-types';
 
 import Scream from '../components/scream/Scream';
 import Profile from '../components/profile/Profile';
+import ScreamSkeleton from '../util/ScreamSkeleton';
