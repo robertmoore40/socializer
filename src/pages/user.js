@@ -12,3 +12,7 @@ import { getScreams } from '../redux/actions/dataActions';
 class home extends Component {
     componentDidMount() {
       this.props.getScreams();
+    }
+    render() {
+      const { screams, loading } = this.props.data;
+      let recentScreamsMarkup = !loading ? (
