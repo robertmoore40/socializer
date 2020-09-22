@@ -40,3 +40,7 @@ class home extends Component {
   const mapStateToProps = (state) => ({
     data: state.data
   });
+  export default connect(
+    mapStateToProps,
+    { getUserData }
+  )(user);
