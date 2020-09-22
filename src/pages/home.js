@@ -11,3 +11,5 @@ import { getScreams } from '../redux/actions/dataActions';
 class home extends Component {
     componentDidMount() {
       this.props.getScreams();
+    }
+    render() {
