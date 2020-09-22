@@ -15,3 +15,6 @@ class home extends Component {
     render() {
         const { screams, loading } = this.props.data;
     let recentScreamsMarkup = !loading ? (
+        screams.map((scream) => <Scream key={scream.screamId} scream={scream} />)
+    ) : (
+      <ScreamSkeleton />
