@@ -33,3 +33,7 @@ class home extends Component {
     }
   }
   
+  user.propTypes = {
+    getUserData: PropTypes.func.isRequired,
+    data: PropTypes.object.isRequired
+  };
