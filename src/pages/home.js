@@ -18,3 +18,7 @@ class home extends Component {
         screams.map((scream) => <Scream key={scream.screamId} scream={scream} />)
     ) : (
       <ScreamSkeleton />
+      );
+    return (
+      <Grid container spacing={16}>
+        <Grid item sm={8} xs={12}></Grid>
