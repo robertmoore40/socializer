@@ -37,3 +37,6 @@ class home extends Component {
     getUserData: PropTypes.func.isRequired,
     data: PropTypes.object.isRequired
   };
+  const mapStateToProps = (state) => ({
+    data: state.data
+  });
