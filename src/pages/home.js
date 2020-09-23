@@ -32,3 +32,5 @@ class home extends Component {
       }
     }
 }
+
+home.propTypes = {
