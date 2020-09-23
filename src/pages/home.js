@@ -34,3 +34,6 @@ class home extends Component {
 }
 
 home.propTypes = {
+  getScreams: PropTypes.func.isRequired,
+  data: PropTypes.object.isRequired
+};
