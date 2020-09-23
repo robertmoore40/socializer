@@ -41,3 +41,8 @@ home.propTypes = {
 const mapStateToProps = (state) => ({
   data: state.data
 });
+
+export default connect(
+  mapStateToProps,
+  { getScreams }
+)(home);
