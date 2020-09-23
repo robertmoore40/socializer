@@ -20,3 +20,9 @@ const styles = (theme) => ({
   class login extends Component {
     constructor() {
       super();
+      this.state = {
+        email: '',
+        password: '',
+        errors: {}
+      };
+    }
