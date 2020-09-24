@@ -57,3 +57,5 @@ const styles = (theme) => ({
           <img src={AppIcon} alt="monkey" className={classes.image} />
           <Typography variant="h2" className={classes.pageTitle}>
             Login
+            </Typography>
+          <form noValidate onSubmit={this.handleSubmit}>
