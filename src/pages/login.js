@@ -50,3 +50,7 @@ const styles = (theme) => ({
         UI: { loading }
       } = this.props;
       const { errors } = this.state;
+      return (
+        <Grid container className={classes.form}>
+          <Grid item sm />
+          <Grid item sm>
