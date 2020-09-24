@@ -59,3 +59,6 @@ const styles = (theme) => ({
             Login
             </Typography>
           <form noValidate onSubmit={this.handleSubmit}>
+          <TextField
+              id="email"
+              name="email"
