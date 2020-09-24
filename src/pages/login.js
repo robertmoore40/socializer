@@ -29,3 +29,5 @@ const styles = (theme) => ({
     componentWillReceiveProps(nextProps) {
       if (nextProps.UI.errors) {
         this.setState({ errors: nextProps.UI.errors });
+      }
+    }
