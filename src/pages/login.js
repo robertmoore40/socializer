@@ -78,3 +78,6 @@ const styles = (theme) => ({
               label="Password"
               className={classes.textField}
               helperText={errors.password}
+              error={errors.password ? true : false}
+              value={this.state.password}
+              onChange={this.handleChange}
