@@ -81,3 +81,5 @@ const styles = (theme) => ({
               error={errors.password ? true : false}
               value={this.state.password}
               onChange={this.handleChange}
+              fullWidth
+              />
