@@ -83,3 +83,8 @@ const styles = (theme) => ({
               onChange={this.handleChange}
               fullWidth
               />
+               {errors.general && (
+              <Typography variant="body2" className={classes.customError}>
+                {errors.general}
+              </Typography>
+            )}
