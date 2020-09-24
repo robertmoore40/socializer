@@ -76,3 +76,5 @@ const styles = (theme) => ({
               name="password"
               type="password"
               label="Password"
+              className={classes.textField}
+              helperText={errors.password}
