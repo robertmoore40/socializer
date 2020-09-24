@@ -71,3 +71,8 @@ const styles = (theme) => ({
               onChange={this.handleChange}
               fullWidth
             />
+             <TextField
+              id="password"
+              name="password"
+              type="password"
+              label="Password"
