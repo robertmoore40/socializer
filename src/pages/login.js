@@ -39,3 +39,8 @@ const styles = (theme) => ({
       };
       this.props.loginUser(userData, this.props.history);
     };
+    handleChange = (event) => {
+      this.setState({
+        [event.target.name]: event.target.value
+      });
+    };
