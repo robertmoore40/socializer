@@ -31,3 +31,5 @@ const styles = (theme) => ({
         this.setState({ errors: nextProps.UI.errors });
       }
     }
+    handleSubmit = (event) => {
+      event.preventDefault();
