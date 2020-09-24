@@ -62,3 +62,7 @@ const styles = (theme) => ({
           <TextField
               id="email"
               name="email"
+              type="email"
+              label="Email"
+              className={classes.textField}
+              helperText={errors.email}
