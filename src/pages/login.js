@@ -68,3 +68,6 @@ const styles = (theme) => ({
               helperText={errors.email}
               error={errors.email ? true : false}
               value={this.state.email}
+              onChange={this.handleChange}
+              fullWidth
+            />
