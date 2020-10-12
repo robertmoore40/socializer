@@ -95,3 +95,7 @@ const styles = (theme) => ({
               className={classes.button}
               disabled={loading}
             ></Button>
+             Login
+              {loading && (
+                <CircularProgress size={30} className={classes.progress} />
+              )}
