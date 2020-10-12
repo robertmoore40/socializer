@@ -125,3 +125,7 @@ const mapStateToProps = (state) => ({
   user: state.user,
   UI: state.UI
 });
+
+const mapActionsToProps = {
+  loginUser
+};
