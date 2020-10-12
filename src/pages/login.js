@@ -113,3 +113,7 @@ class login extends Component {
     );
   }
 }
+
+login.propTypes = {
+  classes: PropTypes.object.isRequired,
+  loginUser: PropTypes.func.isRequired,
