@@ -100,3 +100,7 @@ const styles = (theme) => ({
                 <CircularProgress size={30} className={classes.progress} />
               )}
                </Button>
+               <br />
+            <small>
+              dont have an account ? sign up <Link to="/signup">here</Link>
+            </small>
