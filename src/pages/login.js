@@ -88,3 +88,10 @@ const styles = (theme) => ({
                 {errors.general}
               </Typography>
             )}
+             <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              className={classes.button}
+              disabled={loading}
+            ></Button>
