@@ -120,3 +120,8 @@ login.propTypes = {
   user: PropTypes.object.isRequired,
   UI: PropTypes.object.isRequired
 };
+
+const mapStateToProps = (state) => ({
+  user: state.user,
+  UI: state.UI
+});
