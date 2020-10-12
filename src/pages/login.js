@@ -1,3 +1,4 @@
+  
 import React, { Component } from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import PropTypes from 'prop-types';
@@ -14,52 +15,53 @@ import { connect } from 'react-redux';
 import { loginUser } from '../redux/actions/userActions';
 
 const styles = (theme) => ({
-    ...theme
-  });
+  ...theme
+});
 
-  class login extends Component {
-    constructor() {
-      super();
-      this.state = {
-        email: '',
-        password: '',
-        errors: {}
-      };
-    }
-    componentWillReceiveProps(nextProps) {
-      if (nextProps.UI.errors) {
-        this.setState({ errors: nextProps.UI.errors });
-      }
-    }
-    handleSubmit = (event) => {
-      event.preventDefault();
-      const userData = {
-        email: this.state.email,
-        password: this.state.password
-      };
-      this.props.loginUser(userData, this.props.history);
+class login extends Component {
+  constructor() {
+    super();
+    this.state = {
+      email: '',
+      password: '',
+      errors: {}
     };
-    handleChange = (event) => {
-      this.setState({
-        [event.target.name]: event.target.value
-      });
+  }
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.UI.errors) {
+      this.setState({ errors: nextProps.UI.errors });
+    }
+  }
+  handleSubmit = (event) => {
+    event.preventDefault();
+    const userData = {
+      email: this.state.email,
+      password: this.state.password
     };
-    render() {
-      const {
-        classes,
-        UI: { loading }
-      } = this.props;
-      const { errors } = this.state;
-      return (
-        <Grid container className={classes.form}>
-          <Grid item sm />
-          <Grid item sm>
+    this.props.loginUser(userData, this.props.history);
+  };
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  };
+  render() {
+    const {
+      classes,
+      UI: { loading }
+    } = this.props;
+    const { errors } = this.state;
+
+    return (
+      <Grid container className={classes.form}>
+        <Grid item sm />
+        <Grid item sm>
           <img src={AppIcon} alt="monkey" className={classes.image} />
           <Typography variant="h2" className={classes.pageTitle}>
             Login
-            </Typography>
+          </Typography>
           <form noValidate onSubmit={this.handleSubmit}>
-          <TextField
+            <TextField
               id="email"
               name="email"
               type="email"
@@ -71,7 +73,7 @@ const styles = (theme) => ({
               onChange={this.handleChange}
               fullWidth
             />
-             <TextField
+            <TextField
               id="password"
               name="password"
               type="password"
@@ -82,32 +84,32 @@ const styles = (theme) => ({
               value={this.state.password}
               onChange={this.handleChange}
               fullWidth
-              />
-               {errors.general && (
+            />
+            {errors.general && (
               <Typography variant="body2" className={classes.customError}>
                 {errors.general}
               </Typography>
             )}
-             <Button
+            <Button
               type="submit"
               variant="contained"
               color="primary"
               className={classes.button}
               disabled={loading}
-            ></Button>
-             Login
+            >
+              Login
               {loading && (
                 <CircularProgress size={30} className={classes.progress} />
               )}
-               </Button>
-               <br />
+            </Button>
+            <br />
             <small>
               dont have an account ? sign up <Link to="/signup">here</Link>
             </small>
-            </form>
+          </form>
         </Grid>
         <Grid item sm />
       </Grid>
-      );
-    }
+    );
   }
+}
