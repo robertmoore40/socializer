@@ -108,3 +108,6 @@ const styles = (theme) => ({
         </Grid>
         <Grid item sm />
       </Grid>
+      );
+    }
+  }
