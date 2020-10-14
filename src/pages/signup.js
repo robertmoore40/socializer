@@ -54,3 +54,5 @@ handleChange = (event) => {
   render() {
     const {
       classes,
+      UI: { loading }
+    } = this.props;
