@@ -46,3 +46,5 @@ class signup extends Component {
     };
     this.props.signupUser(newUserData, this.props.history);
 };
+handleChange = (event) => {
+    this.setState({
