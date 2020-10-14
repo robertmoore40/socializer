@@ -27,3 +27,8 @@ class signup extends Component {
         handle: '',
         errors: {}
       };
+    }
+    componentWillReceiveProps(nextProps) {
+      if (nextProps.UI.errors) {
+        this.setState({ errors: nextProps.UI.errors });
+      }
