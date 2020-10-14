@@ -16,3 +16,7 @@ import { signupUser } from '../redux/actions/userActions';
 const styles = (theme) => ({
   ...theme
 });
+
+class signup extends Component {
+    constructor() {
+      super();
