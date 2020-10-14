@@ -23,3 +23,7 @@ class signup extends Component {
       this.state = {
         email: '',
         password: '',
+        confirmPassword: '',
+        handle: '',
+        errors: {}
+      };
