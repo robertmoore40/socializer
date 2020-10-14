@@ -32,3 +32,5 @@ class signup extends Component {
       if (nextProps.UI.errors) {
         this.setState({ errors: nextProps.UI.errors });
       }
+    }
+    handleSubmit = (event) => {
