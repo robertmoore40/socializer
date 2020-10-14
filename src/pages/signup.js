@@ -38,3 +38,6 @@ class signup extends Component {
     this.setState({
       loading: true
     });
+    const newUserData = {
+        email: this.state.email,
+        password: this.state.password,
