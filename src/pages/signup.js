@@ -44,3 +44,5 @@ class signup extends Component {
         confirmPassword: this.state.confirmPassword,
       handle: this.state.handle
     };
+    this.props.signupUser(newUserData, this.props.history);
+};
