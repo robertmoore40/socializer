@@ -104,3 +104,15 @@ handleChange = (event) => {
                 onChange={this.handleChange}
                 fullWidth
               />
+               <TextField
+              id="handle"
+              name="handle"
+              type="text"
+              label="Handle"
+              className={classes.textField}
+              helperText={errors.handle}
+              error={errors.handle ? true : false}
+              value={this.state.handle}
+              onChange={this.handleChange}
+              fullWidth
+            />
