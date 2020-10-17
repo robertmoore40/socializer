@@ -80,3 +80,14 @@ handleChange = (event) => {
               onChange={this.handleChange}
               fullWidth
             />
+              <TextField
+              id="password"
+              name="password"
+              type="password"
+              label="Password"
+              className={classes.textField}
+              helperText={errors.password}
+              error={errors.password ? true : false}
+              value={this.state.password}
+              onChange={this.handleChange}
+              fullWidth
