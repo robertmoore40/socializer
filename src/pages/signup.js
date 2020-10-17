@@ -60,4 +60,8 @@ handleChange = (event) => {
     const { errors } = this.state;
 
     return (
-      <Grid container className={classes.form}>
+      <Grid container className={classes.form}></Grid>
+      <Grid item sm />
+      <Grid item sm>
+        <img src={AppIcon} alt="monkey" className={classes.image} />
+        <Typography variant="h2" className={classes.pageTitle}>
