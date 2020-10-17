@@ -91,3 +91,16 @@ handleChange = (event) => {
               value={this.state.password}
               onChange={this.handleChange}
               fullWidth
+              />
+              <TextField
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+                label="Confirm Password"
+                className={classes.textField}
+                helperText={errors.confirmPassword}
+                error={errors.confirmPassword ? true : false}
+                value={this.state.confirmPassword}
+                onChange={this.handleChange}
+                fullWidth
+              />
