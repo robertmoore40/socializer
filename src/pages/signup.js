@@ -58,3 +58,6 @@ handleChange = (event) => {
     } = this.props;
 
     const { errors } = this.state;
+
+    return (
+      <Grid container className={classes.form}>
