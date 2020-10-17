@@ -65,3 +65,18 @@ handleChange = (event) => {
       <Grid item sm>
         <img src={AppIcon} alt="monkey" className={classes.image} />
         <Typography variant="h2" className={classes.pageTitle}>
+        SignUp
+          </Typography>
+          <form noValidate onSubmit={this.handleSubmit}>
+            <TextField
+              id="email"
+              name="email"
+              type="email"
+              label="Email"
+              className={classes.textField}
+              helperText={errors.email}
+              error={errors.email ? true : false}
+              value={this.state.email}
+              onChange={this.handleChange}
+              fullWidth
+            />
