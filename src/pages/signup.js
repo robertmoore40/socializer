@@ -132,3 +132,10 @@ handleChange = (event) => {
             <small>
               Already have an account ? Login <Link to="/login">here</Link>
             </small>
+            </form>
+        </Grid>
+        <Grid item sm />
+      </Grid>
+    );
+  }
+}
