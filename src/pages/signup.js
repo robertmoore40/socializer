@@ -129,3 +129,6 @@ handleChange = (event) => {
               disabled={loading}
             ></Button>
             <br />
+            <small>
+              Already have an account ? Login <Link to="/login">here</Link>
+            </small>
