@@ -49,3 +49,12 @@ axios.defaults.baseURL =
             <Navbar />
             <div className="container">
               <Switch>
+              <Route exact path="/" component={home} />
+                <AuthRoute exact path="/login" component={login} />
+                <AuthRoute exact path="/signup" component={signup} />
+                <Route exact path="/users/:handle" component={user} />
+                <Route
+                  exact
+                  path="/users/:handle/scream/:screamId"
+                  component={user}
+                />
