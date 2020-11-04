@@ -43,3 +43,9 @@ axios.defaults.baseURL =
   class App extends Component {
     render() {
       return (
+        <MuiThemeProvider theme={theme}>
+        <Provider store={store}>
+          <Router>
+            <Navbar />
+            <div className="container">
+              <Switch>
