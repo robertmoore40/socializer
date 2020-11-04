@@ -39,3 +39,7 @@ axios.defaults.baseURL =
       store.dispatch(getUserData());
     }
   }
+
+  class App extends Component {
+    render() {
+      return (
