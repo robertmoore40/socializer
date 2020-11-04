@@ -58,3 +58,8 @@ axios.defaults.baseURL =
                   path="/users/:handle/scream/:screamId"
                   component={user}
                 />
+                  </Switch>
+            </div>
+          </Router>
+        </Provider>
+      </MuiThemeProvider>
